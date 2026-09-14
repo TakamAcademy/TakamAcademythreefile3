@@ -1,3 +1,4 @@
+
 /* ================= PAGE NAVIGATION WITH BACK BUTTON SUPPORT ================= */
 
 const pages = document.querySelectorAll(".page");
@@ -343,10 +344,10 @@ document.addEventListener("keydown", function(e) {
 /* ================= TYPING ANIMATION ================= */
 
 const texts = [
-  "জ্ঞান, নৈতিকতা ",
-  "শিক্ষার আলোয় ",
-  "জ্ঞান হোক আলো",
-  "আদর্শ শিক্ষায় গড়ে"
+  "কুরআন-সুন্নাহর শিক্ষা",
+  "ইলম ও আমল",
+  "আদর্শ চরিত্র গঠন",
+  "দ্বীনি শিক্ষা নিকেতন"
 ];
 
 const typedText = document.getElementById("typedText");
@@ -518,3 +519,164 @@ if (slider && totalSlides > 0) {
   updateDots();
   startAutoSlide();
 }
+
+/* =====================================================
+   MODERN IMAGE SLIDER JAVASCRIPT
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    const nextButton = document.querySelector(".next");
+    const prevButton = document.querySelector(".prev");
+    const progress = document.querySelector(".slider-progress span");
+
+    let currentSlide = 0;
+    let autoSlide;
+
+    /* Slide duration (5 seconds) */
+    const slideDuration = 5000;
+
+    /* SHOW SLIDE */
+    function showSlide(index) {
+        if (index >= slides.length) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = slides.length - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        /* Remove active class */
+        slides.forEach(function (slide) {
+            slide.classList.remove("active");
+        });
+
+        dots.forEach(function (dot) {
+            dot.classList.remove("active");
+        });
+
+        /* Add active class */
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+
+        /* Progress bar reset */
+        progress.style.transition = "none";
+        progress.style.width = "0%";
+
+        setTimeout(function () {
+            progress.style.transition = "width " + slideDuration + "ms linear";
+            progress.style.width = "100%";
+        }, 50);
+    }
+
+    /* NEXT SLIDE */
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+        restartAutoSlide();
+    }
+
+    /* PREVIOUS SLIDE */
+    function previousSlide() {
+        showSlide(currentSlide - 1);
+        restartAutoSlide();
+    }
+
+    /* BUTTON EVENTS */
+    nextButton.addEventListener("click", nextSlide);
+    prevButton.addEventListener("click", previousSlide);
+
+    /* DOT EVENTS */
+    dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function () {
+            showSlide(index);
+            restartAutoSlide();
+        });
+    });
+
+    /* AUTO SLIDE */
+    function startAutoSlide() {
+        autoSlide = setInterval(function () {
+            showSlide(currentSlide + 1);
+        }, slideDuration);
+    }
+
+    function restartAutoSlide() {
+        clearInterval(autoSlide);
+        startAutoSlide();
+    }
+
+    /* TOUCH SWIPE (MOBILE) */
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const slider = document.querySelector(".slider-wrapper");
+
+    slider.addEventListener(
+        "touchstart",
+        function (event) {
+            touchStartX = event.changedTouches[0].screenX;
+        },
+        { passive: true }
+    );
+
+    slider.addEventListener(
+        "touchend",
+        function (event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleSwipe();
+        },
+        { passive: true }
+    );
+
+    function handleSwipe() {
+        const distance = touchEndX - touchStartX;
+
+        if (Math.abs(distance) < 50) {
+            return;
+        }
+
+        if (distance < 0) {
+            nextSlide();
+        } else {
+            previousSlide();
+        }
+    }
+
+    /* INITIALIZE SLIDER */
+    showSlide(0);
+    startAutoSlide();
+});
+/* =====================================================
+   MODERN IMAGE SLIDER JAVASCRIPT Closd
+===================================================== */
+
+
+function openPdfModal(pdfUrl) {
+  const modal = document.getElementById("pdfModal");
+  const iframe = document.getElementById("pdfFrame");
+  
+  // বাটনে ক্লিক করলে সেই বইয়ের লিঙ্ক ইফ্রেম-এ যাবে
+  iframe.src = pdfUrl || PDF_FILE_URL;
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closePdfModal() {
+  const modal = document.getElementById("pdfModal");
+  const iframe = document.getElementById("pdfFrame");
+  
+  iframe.src = "";
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+}
+
+// Toggle WhatsApp Popup
+function toggleWhatsApp() {
+  const popup = document.getElementById("waPopup");
+  popup.classList.toggle("active");
+}
+
+
+
+
