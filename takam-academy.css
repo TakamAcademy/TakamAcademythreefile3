@@ -232,6 +232,491 @@
       color: var(--primary);
       cursor: pointer;
     }
+
+/* ==============================
+   HEADER MARQUEE STYLES
+============================== */
+
+.top-marquee {
+    position: relative;
+    width: 100%;
+    max-width: 1370px;
+    height: 52px;
+    margin: 0.1px auto;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #071a31, #0b2b4f, #071a31);
+    border: 2px solid #d4af37;
+    border-radius: 0; /* ৩0px বাদ দিয়ে 0 করা হয়েছে */
+    overflow: hidden;
+    z-index: 99;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15), 0 0 15px rgba(212,175,55,.10);
+}
+
+/* ANNOUNCEMENT LABEL */
+.announcement-label {
+    position: relative;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 120px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d4af37, #f1d477, #c49a25);
+    color: #071a31;
+    font-size: 16px;
+    font-weight: 800;
+    z-index: 5;
+    box-shadow: 4px 0 12px rgba(0,0,0,.25);
+}
+
+/* Label Pulse Animation */
+.announcement-label::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,.45);
+    animation: labelPulse 2s ease-in-out infinite;
+}
+
+@keyframes labelPulse {
+    0%, 100% { opacity: .3; }
+    50% { opacity: 1; }
+}
+
+/* MARQUEE AREA */
+.marquee-area {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* FADE EFFECT */
+.marquee-area::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background: linear-gradient(90deg, #0b2b4f, transparent);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.marquee-area::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    height: 100%;
+    background: linear-gradient(270deg, #071a31, transparent);
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* MOVING TRACK (গতি কমানো হয়েছে: 25s থেকে বাড়িয়ে 45s করা হয়েছে) */
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: smoothMarquee 150s linear infinite;
+}
+
+/* TEXT STYLE */
+.marquee-text {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 80px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .2px;
+}
+
+.marquee-text::before {
+    content: "✦";
+    color: #d4af37;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+/* CONTINUOUS LOOP ANIMATION */
+@keyframes smoothMarquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* HOVER PAUSE */
+.top-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+/* RESPONSIVE MOBILE (মোবাইলেও গতি কম রাখা হয়েছে: 150s) */
+@media(max-width: 600px) {
+    .top-marquee {
+        width: 100%;
+        height: 46px;
+        margin: 10px auto;
+        border-radius: 0; /* ২৫px বাদ দিয়ে 0 করা হয়েছে */
+    }
+
+    .announcement-label {
+        min-width: 92px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .marquee-text {
+        font-size: 13px;
+        padding-right: 55px;
+    }
+
+    .marquee-track {
+        animation-duration: 100s;
+    }
+}
+
+@media(max-width: 380px) {
+    .announcement-label {
+        min-width: 80px;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .marquee-text {
+        font-size: 12px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    .marquee-track,
+    .announcement-label::after {
+        animation: none;
+    }
+}
+
+
+    /* =====================================================
+   MODERN ISLAMIC IMAGE SLIDER
+   NAVY + GOLD + WHITE
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans Bengali", "Nirmala UI", Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* SLIDER CONTAINER */
+.hero-slider {
+    width: 100%;
+    padding: 20px 15px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 560px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #071b33;
+    box-shadow: 0 20px 50px rgba(0,0,0,.20);
+}
+
+/* SLIDES */
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.04);
+    transition: opacity .8s ease, transform 1.2s ease, visibility .8s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* IMAGE */
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(3,18,35,.94) 0%,
+        rgba(3,18,35,.72) 35%,
+        rgba(3,18,35,.25) 75%,
+        rgba(3,18,35,.05) 100%
+    );
+}
+
+/* CONTENT */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: min(580px, 75%);
+    color: #fff;
+    z-index: 3;
+}
+
+/* BADGE */
+.slide-badge {
+    display: inline-block;
+    padding: 7px 16px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(212,175,55,.65);
+    border-radius: 50px;
+    background: rgba(212,175,55,.12);
+    color: #f0c95b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    backdrop-filter: blur(8px);
+}
+
+/* TITLE */
+.slide-content h1 {
+    font-size: clamp(32px, 5vw, 62px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-weight: 800;
+    text-shadow: 0 4px 15px rgba(0,0,0,.35);
+}
+
+/* DESCRIPTION */
+.slide-content p {
+    max-width: 520px;
+    margin-bottom: 28px;
+    font-size: clamp(15px, 2vw, 19px);
+    line-height: 1.8;
+    color: rgba(255,255,255,.9);
+}
+
+/* BUTTON */
+.slide-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d4af37, #f0c95b);
+    color: #071b33;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .3s ease;
+    box-shadow: 0 8px 25px rgba(212,175,55,.25);
+}
+
+.slide-btn span {
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.slide-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(212,175,55,.4);
+}
+
+.slide-btn:hover span {
+    transform: translateX(5px);
+}
+
+/* NAVIGATION BUTTONS */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    background: rgba(255,255,255,.10);
+    color: #fff;
+    font-size: 34px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    transition: .3s ease;
+}
+
+.slider-btn:hover {
+    background: #d4af37;
+    color: #071b33;
+    border-color: #d4af37;
+}
+
+.slider-btn.prev {
+    left: 20px;
+}
+
+.slider-btn.next {
+    right: 20px;
+}
+
+/* DOTS */
+.slider-dots {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,.45);
+    cursor: pointer;
+    transition: .35s ease;
+}
+
+.dot.active {
+    width: 30px;
+    border-radius: 20px;
+    background: #d4af37;
+}
+
+/* PROGRESS BAR */
+.slider-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,.15);
+    z-index: 10;
+}
+
+.slider-progress span {
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: #d4af37;
+}
+
+/* TABLET MEDIA QUERY */
+@media(max-width: 900px) {
+    .slider-wrapper {
+        height: 480px;
+        border-radius: 20px;
+    }
+    .slide-content {
+        left: 7%;
+        width: 75%;
+    }
+    .slider-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 28px;
+    }
+}
+
+/* MOBILE MEDIA QUERY */
+@media(max-width: 600px) {
+    .hero-slider {
+        padding: 10px;
+    }
+    .slider-wrapper {
+        height: 430px;
+        border-radius: 18px;
+    }
+    .slide-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(3,18,35,.12) 0%,
+            rgba(3,18,35,.45) 35%,
+            rgba(3,18,35,.95) 100%
+        );
+    }
+    .slide-content {
+        top: auto;
+        bottom: 65px;
+        left: 20px;
+        width: calc(100% - 40px);
+        transform: none;
+    }
+    .slide-badge {
+        font-size: 10px;
+        padding: 6px 12px;
+        margin-bottom: 10px;
+    }
+    .slide-content h1 {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+    .slide-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 17px;
+    }
+    .slide-btn {
+        padding: 10px 17px;
+        font-size: 13px;
+    }
+    .slider-btn {
+        top: 20px;
+        transform: none;
+        width: 36px;
+        height: 36px;
+        font-size: 25px;
+    }
+    .slider-btn.prev {
+        left: auto;
+        right: 62px;
+    }
+    .slider-btn.next {
+        right: 18px;
+    }
+    .slider-dots {
+        bottom: 20px;
+    }
+}
+
+/* SMALL MOBILE MEDIA QUERY */
+@media(max-width: 380px) {
+    .slider-wrapper {
+        height: 400px;
+    }
+    .slide-content h1 {
+        font-size: 25px;
+    }
+    .slide-content p {
+        font-size: 13px;
+    }
+}
 /* ================= HERO ================= */
 
 .hero {
@@ -2401,11 +2886,22 @@ body {
         overflow-x: auto;
       }
     }
+/* ================= TYPING TEXT ================= */
 
-    /* ================= TYPING TEXT ================= */
+/* টাইপিং টেক্সট লেআউট লক (যাতে উঠানামা না করে) */
+.typing-container {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.5em;       /* লাইন হাইট লক করে লেআউট স্থির রাখবে */
+    white-space: nowrap;     /* লেখা ভেঙে নিচে যাবে না */
+    vertical-align: middle;
+}
 
 #typedText {
     color: var(--gold);
+    display: inline-block;
+    min-width: 250px;        /* আপনার সবচেয়ে বড় লেখার সাইজ অনুযায়ী এই পিক্সেল কম-বেশি করতে পারেন */
+    text-align: left;
 }
 
 .typing-cursor {
@@ -2427,6 +2923,9 @@ body {
         opacity: 0;
     }
 }
+
+/* ================= RESET & BASE ================= */
+
 *{
     margin:0;
     padding:0;
@@ -2765,4 +3264,446 @@ body{
         height:36px;
         font-size:18px;
     }
+}
+
+
+/* =====================================================
+   1. Book PDF POPUP STYLES
+===================================================== */
+.pdf-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+}
+
+.pdf-modal-content {
+  width: 90%;
+  height: 90vh;
+  margin: 2vh auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-header {
+  background: #075c42;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* =====================================================
+   2. ANIMATIONS (ENTRANCE & ROTATING BORDER)
+===================================================== */
+/* স্ক্রিনে কার্ড আসার এনিমেশন */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* বর্ডার ঘোরার এনিমেশন */
+@keyframes spinBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   3. BOOKS GRID & ROTATING ANIMATED CARDS
+===================================================== */
+.book-grid-container {
+  max-width: 1150px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: #075c42;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 15px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* ঘোরানো বর্ডার সহ মূল এিমেটেড কার্ড */
+.book-card-item {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 3px; /* বর্ডারের পুরুত্ব */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.8s ease-out forwards;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* চারপাশের ঘুরতে থাকা ব্যাকগ্রাউন্ড বর্ডার */
+.book-card-item::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent, 
+    #075c42, 
+    #efd27b, 
+    #24aa7d, 
+    transparent 80%
+  );
+  animation: spinBorder 3.5s linear infinite;
+  z-index: 1;
+}
+
+/* কার্ডের ব্যাকগ্রাউন্ড মাস্ক (ভেতরের অংশ সাদা রাখার জন্য) */
+.book-card-item::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #ffffff;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+/* হভার করলে পুরো কার্ড হালকা উপরে উঠবে ও ছায়া বাড়বে */
+.book-card-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 35px rgba(7, 92, 66, 0.22);
+}
+
+/* =====================================================
+   4. BOOK COVER FIT & IMAGE ANIMATION
+===================================================== */
+/* কন্টেন্টগুলো বর্ডারের উপরে ভাসিয়ে রাখার জন্য z-index: 3 */
+.book-cover-wrap,
+.book-details,
+.book-cover-box {
+  position: relative;
+  z-index: 3;
+}
+
+.book-cover-wrap {
+  width: 100%;
+  height: 280px;
+  background: #f4f6f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.book-cover-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.book-card-item:hover .book-cover-img {
+  transform: scale(1.06) rotate(1deg);
+  filter: brightness(1.05);
+}
+
+.book-cover-box {
+  height: 200px;
+  background: linear-gradient(135deg, #075c42, #032f23);
+  color: #efd27b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.book-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.book-cover-box h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.book-cover-box p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =====================================================
+   5. BOOK DETAILS & BUTTON STYLING
+===================================================== */
+.book-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.book-details h4 {
+  color: #17392e;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.book-details .author {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.read-btn {
+  width: 100%;
+  padding: 11px 0;
+  background: linear-gradient(135deg, #075c42, #043d2e);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(7, 92, 66, 0.25);
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  background: linear-gradient(135deg, #097554, #075c42);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 92, 66, 0.4);
+}
+
+
+
+/* =====================================================
+   WHATSAPP FLOATING WIDGET STYLES
+===================================================== */
+.wa-widget {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999999;
+}
+
+/* Floating Green Button */
+.wa-float-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulseWa 2s infinite;
+}
+
+.wa-float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes pulseWa {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* WhatsApp Chat Popup Box */
+.wa-popup {
+  display: none;
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  width: 310px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: waSlideUp 0.3s ease forwards;
+}
+
+.wa-popup.active {
+  display: block;
+}
+
+@keyframes waSlideUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Popup Header */
+.wa-popup-header {
+  background: #075c42;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.wa-avatar {
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-user-info h4 {
+  font-size: 15px;
+  margin: 0;
+  color: #fff;
+}
+
+.wa-user-info p {
+  font-size: 11px;
+  margin: 2px 0 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.wa-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Popup Body */
+.wa-popup-body {
+  padding: 20px 15px;
+  background: #e5ddd5; /* WhatsApp Chat Background */
+  min-height: 80px;
+}
+
+.wa-message {
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 0 12px 12px 12px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: inline-block;
+}
+
+/* Popup Footer Button */
+.wa-popup-footer {
+  padding: 12px 15px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.wa-start-chat-btn {
+  display: block;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.wa-start-chat-btn:hover {
+  background: #1eb956;
+}
+
+
+
+
+/* =====================================================
+   FIX BOTTOM WHITE SPACE (SAFE METHOD)
+===================================================== */
+/* ১. পেজের অতিরিক্ত মার্জিন ও স্ক্রলিং সমস্যা দূর করা */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ২. ফুটারের নিচের অতিরিক্ত গ্যাপ রিমুভ করা */
+footer, .footer {
+  margin-bottom: 0 !important;
+  position: relative;
+  z-index: 10;
+}
+
+/* ৩. হোয়াটসঅ্যাপ বাটনের সঠিক পজিশন (ফিক্সড) */
+.wa-widget {
+  position: fixed !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  z-index: 999999 !important;
+  height: auto !important; /* আগের height: 0 সরিয়ে সঠিক অটো হাইট সেট করা হলো */
 }
