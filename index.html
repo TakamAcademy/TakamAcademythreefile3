@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="তাকাম একাডেমি - জ্ঞান, নৈতিকতা ও আদর্শের সমন্বয়ে সুন্দর ভবিষ্যৎ">
+  <title>তাকাম একাডেমি | জ্ঞান, নৈতিকতা ও আদর্শ</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="takam-academy.css">
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="top-info">
+      <span><i class="fa-solid fa-phone"></i> +880 1638-816760</span>
+      <span><i class="fa-solid fa-envelope"></i> info@takamacademy.com</span>
+      <span><i class="fa-solid fa-location-dot"></i> ঢাকা, বাংলাদেশ</span>
+    </div>
+
+    <div class="social-mini">
+      <a href="https://www.facebook.com/Abu.twahaa.saiful.Islam.760"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="container nav-inner">
+
+    <a href="#" class="brand" onclick="showPage('home')">
+      <div class="logo"></div>
+      <div class="brand-text">
+        <h1>তাকাম একাডেমি</h1>
+        <small>TAKAM ACADEMY</small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#" class="active" data-page="home">হোম</a></li>
+      <li><a href="#" data-page="about">আমাদের সম্পর্কে</a></li>
+      <li><a href="#" data-page="departments">বিভাগসমূহ</a></li>
+      <li><a href="#" data-page="teachers">শিক্ষকবৃন্দ</a></li>
+      <li><a href="#" data-page="courses">কোর্সসমূহ</a></li>
+      <li><a href="#" data-page="notice">নোটিশ</a></li>
+      <li><a href="#" data-page="events">ইভেন্ট</a></li>
+      <li><a href="#" data-page="gallery">গ্যালারি</a></li>
+      <li><a href="#" data-page="results">ফলাফল</a></li>
+      <li><a href="#" data-page="contact">যোগাযোগ</a></li>
+      <li>
+        <a href="#" class="admission-btn" data-page="admission">
+          ভর্তি আবেদন
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HOME PAGE ================= -->
+<main id="home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-star"></i>
+          একটি আধুনিক মূল্যবোধভিত্তিক শিক্ষা প্রতিষ্ঠান
+        </div>
+
+      <h2>
+        তাকাম একাডেমী
+        <br>
+        <span id="typedText"></span>
+       <span class="typing-cursor"></span>
+      </h2>
+
+        <p>
+          তাকাম একাড
+          যেখানে শিক্ষার্থীদের জ্ঞান অর্জনের পাশাপাশি নৈতিকতা, শৃঙ্খলা
+          ও মানবিক গুণাবলি বিকাশে গুরুত্ব দেওয়া হয়।
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" data-page="admission">
+            ভর্তি আবেদন করুন
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline" data-page="about">
+            আমাদের সম্পর্কে জানুন
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnoaL6pXdwohvFuwbwv79aB5Y2dR_lMKSinqUfPpLtOKei8frIaTmipwHY5YALAF4o9XpAoUMM9FxGCW0vX0Bl222IFXuIZWGN7njljq8yaTs5wf82eecsO4kb8eXgafX1Xks4VJwerEzhkR6qoEnTST2CqqyJ-bbj5JyBNRaYdM_h8YGratDIEuRULa6i/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.37%20PM.jpeg"
+            alt="শিক্ষা কার্যক্রম">
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <strong>আধুনিক শিক্ষা</strong>
+            <small>নৈতিকতা ও দক্ষতার সমন্বয়</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+
+      <div class="stat-card reveal">
+        <div class="stat-icon">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <h3><span class="counter" data-target="850">0</span>+</h3>
+        <p>মোট শিক্ষার্থী</p>
+      </div>
+
+      <div class="stat-card reveal">
+        <div class="stat-icon">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <h3><span class="counter" data-target="45">0</span>+</h3>
+        <p>অভিজ্ঞ শিক্ষক</p>
+      </div>
+
+      <div class="stat-card reveal">
+        <div class="stat-icon">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <h3><span class="counter" data-target="18">0</span>+</h3>
+        <p>কোর্স ও বিভাগ</p>
+      </div>
+
+      <div class="stat-card reveal">
+        <div class="stat-icon">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h3><span class="counter" data-target="32">0</span>+</h3>
+        <p>অর্জন ও সাফল্য</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about">
+    <div class="container about-grid">
+
+      <div class="about-image reveal">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8LP9-w0HSqM4Dd7uz8Tht16wcW2gyeLDqgWxoZIGR3VoqfwyW9u8IMijSfaGNub87bSoGShLvw1z_7JAKMsIOlTUoQsyeLgWPBuiL99-TwQmYeuEj5H5zJC6oPZyJg9SVki2eYbFzB-0kZ99cHpnhVuvF_OZenI2msKvNFQqsTI9tYHtE8BfMXiQlqNgI/s1600/WhatsApp%20Image%202026-08-17%20at%209.22.50%20PM.jpeg"
+          alt="তাকাম একাডেমি">
+        <div class="experience">
+          <div>
+            <strong>১০+</strong>
+            <span>বছরের পথচলা</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="eyebrow">আমাদের পরিচয়</span>
+
+        <h2>তাকাম একাডেমি সম্পর্কে</h2>
+
+        <p>
+          তাকাম একাডেমি এমন একটি শিক্ষা  মূল্যবোধ একসাথে বিকশিত হয়।
+        </p>
+
+        <p>
+          আমাদের লক্ষ্য হলো শিক্ষ
+        </p>
+
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i> মানসম্মত ও আধুনিক পাঠদান</li>
+          <li><i class="fa-solid fa-circle-check"></i> নৈতিক ও মূল্যবোধভিত্তিক শিক্ষা</li>
+          <li><i class="fa-solid fa-circle-check"></i> দক্ষ ও অভিজ্ঞ শিক্ষক</li>
+          <li><i class="fa-solid fa-circle-check"></i> প্রযুক্তিনির্ভর শিক্ষা ব্যবস্থা</li>
+        </ul>
+
+        <a href="#" class="btn btn-primary" data-page="about">
+          বিস্তারিত জানুন
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">আমাদের বিশেষত্ব</span>
+        <h2>কেন তাকাম একাডেমি?</h2>
+        <p>
+          শিক্ষার্থীর জ্ঞান, দক্ষতা ও চরিত্র—তিনটির সমন্বিত বিকাশই আমাদের লক্ষ্য।
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>মানসম্মত শিক্ষা</h3>
+          <p>আধুনিক কারিকুলাম ও কার্যকর পাঠদান পদ্ধতির মাধ্যমে মানসম্মত শিক্ষা।</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>দক্ষ ও অভিজ্ঞ শিক্ষক</h3>
+          <p>অভিজ্ঞ ও প্রশিক্ষিত শিক্ষকমণ্ডলীর নিবিড় তত্ত্বাবধান।</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <h3>আধুনিক পাঠদান</h3>
+          <p>সহজ, আকর্ষণীয় এবং প্রযুক্তিনির্ভর পাঠদান পদ্ধতি।</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-mosque"></i></div>
+          <h3>নৈতিক শিক্ষা</h3>
+          <p>নৈতিকতা, শৃঙ্খলা ও মূল্যবোধের বিকাশে বিশেষ গুরুত্ব।</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-laptop"></i></div>
+          <h3>প্রযুক্তিনির্ভর শিক্ষা</h3>
+          <p>ডিজিটাল রিসোর্স ও আধুনিক প্রযুক্তির কার্যকর ব্যবহার।</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>সার্বিক বিকাশ</h3>
+          <p>শিক্ষার্থীর মেধা, সৃজনশীলতা, নেতৃত্ব ও মানবিক গুণাবলির বিকাশ।</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments -->
+  <section class="section departments">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">শিক্ষার ক্ষেত্র</span>
+        <h2>আমাদের বিভাগসমূহ</h2>
+        <p>বিভিন্ন বয়স ও প্রয়োজন অনুযায়ী সাজানো আমাদের শিক্ষা বিভাগ।</p>
+      </div>
+
+      <div class="departments-grid">
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-child"></i></div>
+          <h3>প্রাথমিক শিক্ষা</h3>
+          <p>শিশুদের মৌলিক শিক্ষা ও সুন্দর ভিত্তি তৈরির কার্যক্রম।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-school"></i></div>
+          <h3>মাধ্যমিক শিক্ষা</h3>
+          <p>মাধ্যমিক পর্যায়ে জ্ঞান ও দক্ষতা বৃদ্ধির সমন্বিত শিক্ষা।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-book"></i></div>
+          <h3>উচ্চতর শিক্ষা</h3>
+          <p>উচ্চতর শিক্ষার জন্য প্রস্তুতিমূলক ও বিশেষায়িত কার্যক্রম।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-quran"></i></div>
+          <h3>নাজেরা/কুরআন শিক্ষা</h3>
+          <p>সঠিক উচ্চারণ ও নিয়মের মাধ্যমে কুরআন শিক্ষার ব্যবস্থা।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-star-and-crescent"></i></div>
+          <h3>হিফজ বিভাগ</h3>
+          <p>পরিকল্পিত ও নিয়মিত পদ্ধতিতে হিফজুল কুরআন কার্যক্রম।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-language"></i></div>
+          <h3>আরবি ও ইসলামিক স্টাডিজ</h3>
+          <p>আরবি ভাষা ও ইসলামী জ্ঞান অর্জনের বিশেষ কোর্স।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-computer"></i></div>
+          <h3>কম্পিউটার ও প্রযুক্তি</h3>
+          <p>বর্তমান সময়ের উপযোগী কম্পিউটার ও ডিজিটাল দক্ষতা।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+        <div class="department-card reveal">
+          <div class="department-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>বিশেষ কোর্স</h3>
+          <p>শিক্ষার্থীদের আগ্রহ ও দক্ষতা অনুযায়ী বিভিন্ন বিশেষ কোর্স।</p>
+          <a href="#" class="card-link" data-page="departments">বিস্তারিত দেখুন →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Courses -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="eyebrow">জনপ্রিয় প্রোগ্রাম</span>
+      <h2>আমাদের কোর্সসমূহ</h2>
+      <p>শিক্ষার্থীদের প্রয়োজন ও ভবিষ্যৎ লক্ষ্য অনুযায়ী বিভিন্ন কোর্স।</p>
+    </div>
+
+    <div class="courses-grid">
+
+      <!-- ================= COURSE 1 ================= -->
+
+      <div class="course-card reveal">
+
+        <div class="course-img">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5QkOEQuXQPn9Pl9DAt2EpCiAogT47fIfGo8KIPDXTbiwD5yUOPPH7hrkX6zFg3usmtS43XNDbLBL9UbAkGvJASzgSenEsvTvpSDMNF6SljDEZiEYlVs7FYbrx6x3fAp9JbVGT8wDkAtSJSlRB-rdVSiTtT9bR6Pqf5Bj1jmZJUwyeXtSntfc9pBVvsWt9/s1536/1000018296.png" alt="প্রাথমিক শিক্ষা">
+        </div>
+
+        <div class="course-body">
+
+          <span class="course-tag">একাডেমিক</span>
+
+          <h3>প্রাথমিক শিক্ষা</h3>
+
+          <div class="course-duration">
+            <i class="fa-regular fa-clock"></i>
+            ১ বছর
+          </div>
+
+          <p>
+            শিক্ষার্থীদের প্রাথমিক ভিত্তি শক্তিশালী করার জন্য পরিকল্পিত কোর্স।
+          </p>
+
+          <!-- কোর্স ফি -->
+          <div class="course-price">
+            <span class="price-label">কোর্স ফি</span>
+            <span class="price">৳ 2,500</span>
+          </div>
+
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">বিস্তারিত</a>
+            <a href="#" class="btn btn-primary" data-page="admission">ভর্তি</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= COURSE 2 ================= -->
+
+      <div class="course-card reveal">
+
+        <div class="course-img">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwAAE9ISAoWSHv8R0ia1r55cY5Dr58iWAKpbu0ja6Bwlq8aJDjmCmJTqlvdQLXll6MGtMrkE5b82CUu40FP5to325O-MqO18h-GV8Szo5gWatC6UDV3rTHTHFTzx4JoQ3hnqWb4hN01sTP3bdr3ropODgGtHgyyK4wC0dqFvORLLV4rNV9RNP9-hfM027w/s1536/WhatsApp%20Image%202026-08-17%20at%209.22.48%20PM%20(1).jpeg" alt="নাজেরা কুরআন">
+        </div>
+
+        <div class="course-body">
+
+          <span class="course-tag">ইসলামিক শিক্ষা</span>
+
+          <h3>নাজেরা কুরআন</h3>
+
+          <div class="course-duration">
+            <i class="fa-regular fa-clock"></i>
+            ৬ মাস
+          </div>
+
+          <p>
+            সহীহ তিলাওয়াত ও কুরআন শিক্ষার জন্য বিশেষভাবে সাজানো কোর্স।
+          </p>
+
+          <!-- কোর্স ফি -->
+          <div class="course-price">
+            <span class="price-label">কোর্স ফি</span>
+            <span class="price">৳ 1,500</span>
+          </div>
+
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">বিস্তারিত</a>
+            <a href="#" class="btn btn-primary" data-page="admission">ভর্তি</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= COURSE 3 ================= -->
+
+      <div class="course-card reveal">
+
+        <div class="course-img">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioCuM8gz21mhKKZ0FlfVVRHU0DyAbfRvZ_TDJrFZyhtea6qYgknsbKdUCsg0JzRaDTymouYF0ubCy20hTf1Uz7PAg-0AyzJiPT4ezLbHTqlOEmAalpCDwQKJpgirR-i_Ku_Ia5hK48q_M9MfZjfGw6ZhwtTaFgooWjTamFRvAKskyIg03weqdEM9TNeaty/s1536/ChatGPT%20Image%20Aug%2017,%202026,%2009_36_18%20PM.png" alt="কম্পিউটার বেসিক">
+        </div>
+
+        <div class="course-body">
+
+          <span class="course-tag">প্রযুক্তি</span>
+
+          <h3>কম্পিউটার বেসিক</h3>
+
+          <div class="course-duration">
+            <i class="fa-regular fa-clock"></i>
+            ৪ মাস
+          </div>
+
+          <p>
+            কম্পিউটার ও ডিজিটাল প্রযুক্তির মৌলিক দক্ষতা অর্জনের কোর্স।
+          </p>
+
+          <!-- কোর্স ফি -->
+          <div class="course-price">
+            <span class="price-label">কোর্স ফি</span>
+            <span class="price">৳ 3,000</span>
+          </div>
+
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">বিস্তারিত</a>
+            <a href="#" class="btn btn-primary" data-page="admission">ভর্তি</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Teachers -->
+  <section class="section teachers">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">আমাদের শক্তি</span>
+        <h2>আমাদের সম্মানিত শিক্ষকবৃন্দ</h2>
+        <p>অভিজ্ঞতা, দক্ষতা ও আন্তরিকতার মাধ্যমে শিক্ষার্থীদের এগিয়ে নেওয়া।</p>
+      </div>
+
+      <div class="teachers-grid">
+
+        <div class="teacher-card reveal">
+          <div class="teacher-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnz3IzPCfpB3Ik6mYP5Aw6LpEO61y-yiHQV0oALG_-ZhrSUQhxoEKV08D7m63vbXDLzChxHPajAp1_m8SFP9jQ72clQ6xB6FVD8lLLccONFeBMNVLw166DlCuqt8SN8K9hD4Lgs4DDb6RRePdQ1b93XCixxOu9bRRwR_XTSQjpNvxY_WRuutcjoza15A-k/s6000/DSC_0091.JPG" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোঃ আব্দুল্লাহ</h3>
+            <div class="position">প্রধান শিক্ষক</div>
+            <p>বাংলা ও সাধারণ শিক্ষা</p>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal">
+          <div class="teacher-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEbPaGaIUoGZJwm_iwyLSzS5sfFGpiWZy3G3ZW9trUXXGIo9YodRPT1sAk4bEasqu59XPiekHH-ceO8nTW5c2G0kqAWKOvp31ZDxUfRPonkQN9JB1kW14O-ODMNJzRbMqLj6hUBLT_VQGtraUswArQehwsCcw7eR1Hr8ZYhr7YeYn6X6G3Z2HRsKgiqjsD/s1208/gri.jpg" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোছাঃ সুমাইয়া</h3>
+            <div class="position">সহকারী শিক্ষক</div>
+            <p>প্রাথমিক শিক্ষা</p>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal">
+          <div class="teacher-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnz3IzPCfpB3Ik6mYP5Aw6LpEO61y-yiHQV0oALG_-ZhrSUQhxoEKV08D7m63vbXDLzChxHPajAp1_m8SFP9jQ72clQ6xB6FVD8lLLccONFeBMNVLw166DlCuqt8SN8K9hD4Lgs4DDb6RRePdQ1b93XCixxOu9bRRwR_XTSQjpNvxY_WRuutcjoza15A-k/s6000/DSC_0091.JPG" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোঃ ইমরান হোসাইন</h3>
+            <div class="position">শিক্ষক</div>
+            <p>আরবি ও ইসলামিক স্টাডিজ</p>
+          </div>
+        </div>
+
+        <div class="teacher-card reveal">
+          <div class="teacher-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEbPaGaIUoGZJwm_iwyLSzS5sfFGpiWZy3G3ZW9trUXXGIo9YodRPT1sAk4bEasqu59XPiekHH-ceO8nTW5c2G0kqAWKOvp31ZDxUfRPonkQN9JB1kW14O-ODMNJzRbMqLj6hUBLT_VQGtraUswArQehwsCcw7eR1Hr8ZYhr7YeYn6X6G3Z2HRsKgiqjsD/s1208/gri.jpg" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোছাঃ নুসরাত</h3>
+            <div class="position">প্রশিক্ষক</div>
+            <p>কম্পিউটার ও প্রযুক্তি</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:30px">
+        <a href="#" class="btn btn-primary" data-page="teachers">
+          সকল শিক্ষক দেখুন
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Notice -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">সর্বশেষ আপডেট</span>
+        <h2>নোটিশ বোর্ড</h2>
+        <p>একাডেমির গুরুত্বপূর্ণ ঘোষণা ও সর্বশেষ নোটিশ।</p>
+      </div>
+
+      <div class="notice-grid">
+
+        <div class="notice-list">
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <div>
+                <strong>১৬</strong>
+                <small>আগস্ট</small>
+              </div>
+            </div>
+            <div class="notice-content">
+              <span class="badge">গুরুত্বপূর্ণ</span>
+              <h3>২০২৬ শিক্ষাবর্ষে ভর্তি কার্যক্রম শুরু</h3>
+              <p>নতুন শিক্ষার্থীদের ভর্তি আবেদন এখন গ্রহণ করা হচ্ছে।</p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <div>
+                <strong>১২</strong>
+                <small>আগস্ট</small>
+              </div>
+            </div>
+            <div class="notice-content">
+              <h3>অভিভাবক সমাবেশ সংক্রান্ত নোটিশ</h3>
+              <p>সকল অভিভাবককে নির্ধারিত সময়ে উপস্থিত থাকার অনুরোধ করা হচ্ছে।</p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <div>
+                <strong>০৮</strong>
+                <small>আগস্ট</small>
+              </div>
+            </div>
+            <div class="notice-content">
+              <h3>মাসিক মূল্যায়ন পরীক্ষার সময়সূচি</h3>
+              <p>আগামী সপ্তাহ থেকে মাসিক মূল্যায়ন পরীক্ষা অনুষ্ঠিত হবে।</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="notice-side">
+          <i class="fa-solid fa-bullhorn"></i>
+          <h3>গুরুত্বপূর্ণ ঘোষণা</h3>
+          <p>
+            একাডেমির সকল নতুন নোটিশ ও আপডেট নিয়মিতভাবে এখানে প্রকাশ করা হবে।
+          </p>
+          <a href="#" class="btn">সব নোটিশ দেখুন</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="section events">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">ক্যালেন্ডার</span>
+        <h2>আসন্ন অনুষ্ঠান ও ইভেন্ট</h2>
+        <p>শিক্ষার্থীদের অংশগ্রহণ ও বিকাশের জন্য বিভিন্ন আয়োজন।</p>
+      </div>
+
+      <div class="events-grid">
+
+        <div class="event-card reveal">
+          <div class="event-top">
+            <div>
+              <span class="course-tag">আগামী ইভেন্ট</span>
+            </div>
+            <div class="event-calendar">
+              <strong>আগস্ট</strong>
+              <span>২৫</span>
+            </div>
+          </div>
+          <h3>বার্ষিক মাহফিল</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সন্ধ্যা ৭টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> একাডেমি মাঠ</span>
+          </div>
+          <p>শিক্ষার্থী, অভিভাবক ও অতিথিদের অংশগ্রহণে বার্ষিক মাহফিল।</p>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-top">
+            <div>
+              <span class="course-tag">শিক্ষামূলক</span>
+            </div>
+            <div class="event-calendar">
+              <strong>সেপ্টে.</strong>
+              <span>০৫</span>
+            </div>
+          </div>
+          <h3>শিক্ষা সফর</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ৮টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> নির্ধারিত স্থান</span>
+          </div>
+          <p>শিক্ষার্থীদের বাস্তব অভিজ্ঞতা অর্জনের জন্য শিক্ষা সফর।</p>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-top">
+            <div>
+              <span class="course-tag">প্রতিযোগিতা</span>
+            </div>
+            <div class="event-calendar">
+              <strong>সেপ্টে.</strong>
+              <span>১২</span>
+            </div>
+          </div>
+          <h3>কুরআন তিলাওয়াত প্রতিযোগিতা</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ৯টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> অডিটোরিয়াম</span>
+          </div>
+          <p>শিক্ষার্থীদের অংশগ্রহণে আন্তঃবিভাগীয় তিলাওয়াত প্রতিযোগিতা।</p>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-top">
+            <div>
+              <span class="course-tag">পুরস্কার</span>
+            </div>
+            <div class="event-calendar">
+              <strong>সেপ্টে.</strong>
+              <span>২০</span>
+            </div>
+          </div>
+          <h3>পুরস্কার বিতরণী</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> বিকেল ৪টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> হলরুম</span>
+          </div>
+          <p>সফল শিক্ষার্থীদের পুরস্কার ও সম্মাননা প্রদান অনুষ্ঠান।</p>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-top">
+            <div>
+              <span class="course-tag">অভিভাবক</span>
+            </div>
+            <div class="event-calendar">
+              <strong>সেপ্টে.</strong>
+              <span>২৭</span>
+            </div>
+          </div>
+          <h3>অভিভাবক সমাবেশ</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ১০টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> অডিটোরিয়াম</span>
+          </div>
+          <p>শিক্ষার্থীদের অগ্রগতি ও ভবিষ্যৎ পরিকল্পনা নিয়ে আলোচনা।</p>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-top">
+            <div>
+              <span class="course-tag">সেমিনার</span>
+            </div>
+            <div class="event-calendar">
+              <strong>অক্টো.</strong>
+              <span>০৩</span>
+            </div>
+          </div>
+          <h3>শিক্ষা ও প্রযুক্তি সেমিনার</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ১১টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> সেমিনার হল</span>
+          </div>
+          <p>আধুনিক শিক্ষায় প্রযুক্তির ভূমিকা নিয়ে বিশেষ সেমিনার।</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">আমাদের মুহূর্ত</span>
+        <h2>ফটো গ্যালারি</h2>
+        <p>তাকাম একাডেমির শিক্ষা ও বিভিন্ন কার্যক্রমের কিছু মুহূর্ত।</p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">সব</button>
+        <button class="filter-btn" data-filter="education">শিক্ষা কার্যক্রম</button>
+        <button class="filter-btn" data-filter="event">অনুষ্ঠান</button>
+        <button class="filter-btn" data-filter="competition">প্রতিযোগিতা</button>
+        <button class="filter-btn" data-filter="campus">ক্যাম্পাস</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-category="education">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnpTtwmwN3KSy-bj7R8lad9zWePeEmqpq9LPI1QUUKij9ARUykU5TeO9qenA7FOwjYbr4xjV_r58sx97b6tksVNctU9FqrLWoCSu4CmbOgWwpcWE-UrswqyMbRjfyxIGVNzwDkbVmIRJ7A9Ut3eLrWVBz_CZrFniGqcLS7i1geU8b5KdzdFEhswBW_CYPB/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.37%20PM%20(1).jpeg" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="event">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="competition">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnpTtwmwN3KSy-bj7R8lad9zWePeEmqpq9LPI1QUUKij9ARUykU5TeO9qenA7FOwjYbr4xjV_r58sx97b6tksVNctU9FqrLWoCSu4CmbOgWwpcWE-UrswqyMbRjfyxIGVNzwDkbVmIRJ7A9Ut3eLrWVBz_CZrFniGqcLS7i1geU8b5KdzdFEhswBW_CYPB/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.37%20PM%20(1).jpeg" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="education">
+          <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="event">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="competition">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHZv9WHNd78NORLsJmM9S0bSVQWimOru7aN1jsI8eddm3-ubGLYwl1HxG8RgYFt26ixC8ofJZBviwbYX7ui4GIuF1axro_fdgVazWh86eJ7a45Uy3cF4L_TZokZpGZr0JmicAqoIr6pEBAuZyXY7SNXr9_Mm_niYrHyLctiS2EjQ86h7LbqdIrNzwb5TnR/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.35%20PM.jpeg" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section achievement-section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">গর্বের মুহূর্ত</span>
+        <h2>আমাদের অর্জন</h2>
+        <p>শিক্ষার্থী ও একাডেমির বিভিন্ন সাফল্যের কিছু চিত্র।</p>
+      </div>
+
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>বিভিন্ন পুরস্কার</h3>
+          <p>বিভিন্ন শিক্ষা ও সাংস্কৃতিক কার্যক্রমে অর্জিত সম্মাননা।</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3>প্রতিযোগিতায় সাফল্য</h3>
+          <p>বিভিন্ন প্রতিযোগিতায় শিক্ষার্থীদের ধারাবাহিক সাফল্য।</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3>শিক্ষার্থীদের অর্জন</h3>
+          <p>শিক্ষার্থীদের ব্যক্তিগত ও একাডেমিক বিশেষ অর্জন।</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>একাডেমির সম্মাননা</h3>
+          <p>বিভিন্ন প্রতিষ্ঠান ও সংগঠনের পক্ষ থেকে অর্জিত সম্মাননা।</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="eyebrow">বিশ্বাস ও আস্থা</span>
+        <h2>অভিভাবক ও শিক্ষার্থীদের মতামত</h2>
+      </div>
+
+      <div class="testimonial-wrap">
+
+        <div class="testimonial" id="testimonial">
+          <div class="quote">
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+
+          <img
+            id="testimonialImg"
+            class="testimonial-img"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEbPaGaIUoGZJwm_iwyLSzS5sfFGpiWZy3G3ZW9trUXXGIo9YodRPT1sAk4bEasqu59XPiekHH-ceO8nTW5c2G0kqAWKOvp31ZDxUfRPonkQN9JB1kW14O-ODMNJzRbMqLj6hUBLT_VQGtraUswArQehwsCcw7eR1Hr8ZYhr7YeYn6X6G3Z2HRsKgiqjsD/s1208/gri.jpg"
+            alt="">
+
+          <div class="stars">★★★★★</div>
+
+          <p id="testimonialText">
+            তাকাম একাডেমির পরিবেশ খুবই সুন্দর। শিক্ষকরা শিক্ষার্থীদের
+            পড়াশোনার পাশাপাশি নৈতিকতা ও শৃঙ্খলার বিষয়েও গুরুত্ব দেন।
+          </p>
+
+          <h3 id="testimonialName">মোছাঃ ফারজানা</h3>
+          <small id="testimonialRole">অভিভাবক</small>
+        </div>
+
+        <div class="testimonial-controls">
+          <button onclick="prevTestimonial()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button onclick="nextTestimonial()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>আপনার সন্তানের সুন্দর ভবিষ্যতের যাত্রা শুরু হোক তাকাম একাডেমির সাথে</h2>
+      <p>
+        আজই আমাদের সাথে যোগাযোগ করুন এবং আপনার সন্তানের জন্য
+        উপযুক্ত শিক্ষা কার্যক্রম নির্বাচন করুন।
+      </p>
+
+      <div class="hero-buttons" style="justify-content:center">
+        <a href="#" class="btn btn-primary" data-page="admission">
+          ভর্তি আবেদন করুন
+        </a>
+        <a href="#" class="btn btn-outline" style="background:white" data-page="contact">
+          যোগাযোগ করুন
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================================================== -->
+<!-- ================= ABOUT PAGE ========================= -->
+<!-- ===================================================== -->
+
+<section id="about" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>আমাদের সম্পর্কে</h2>
+      <p>তাকাম একাডেমির লক্ষ্য, উদ্দেশ্য ও শিক্ষা দর্শন</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container about-grid">
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85" alt="">
+      </div>
+
+      <div class="about-content">
+        <span class="eyebrow">তাকাম একাডেমি</span>
+        <h2>জ্ঞান ও মূল্যবোধের সমন্বিত শিক্ষা</h2>
+
+        <p>
+          তাকাম একাডেমি একটি আধুনিক শিক্ষা প্রতিষ্ঠান হিসেবে শিক্ষার্থীদের
+          একাডেমিক জ্ঞানের পাশাপাশি নৈতিক ও মানবিক গুণাবলি বিকাশে কাজ করে।
+        </p>
+
+        <p>
+          আমরা বিশ্বাস করি, প্রকৃত শিক্ষা শুধু পরীক্ষায় ভালো ফলাফল নয়;
+          বরং একজন শিক্ষার্থীকে সৎ, দক্ষ, আত্মনির্ভরশীল ও দায়িত্বশীল মানুষ হিসেবে
+          গড়ে তোলাই শিক্ষার প্রকৃত উদ্দেশ্য।
+        </p>
+
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i> আধুনিক ও কার্যকর কারিকুলাম</li>
+          <li><i class="fa-solid fa-circle-check"></i> অভিজ্ঞ শিক্ষকমণ্ডলী</li>
+          <li><i class="fa-solid fa-circle-check"></i> প্রযুক্তিনির্ভর শিক্ষা</li>
+          <li><i class="fa-solid fa-circle-check"></i> নৈতিক ও মূল্যবোধভিত্তিক পরিবেশ</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section departments">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="eyebrow">আমাদের লক্ষ্য</span>
+        <h2>ভিশন ও মিশন</h2>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3>আমাদের ভিশন</h3>
+          <p>
+            জ্ঞানী, দক্ষ, নৈতিক ও মানবিক গুণাবলিসম্পন্ন একটি প্রজন্ম গড়ে তোলা।
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3>আমাদের মিশন</h3>
+          <p>
+            আধুনিক শিক্ষার সাথে নৈতিকতা ও মূল্যবোধকে সমন্বয় করে কার্যকর শিক্ষা প্রদান।
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>আমাদের অঙ্গীকার</h3>
+          <p>
+            প্রতিটি শিক্ষার্থীর সম্ভাবনাকে বিকশিত করার জন্য একটি নিরাপদ ও অনুপ্রেরণামূলক পরিবেশ তৈরি করা।
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= DEPARTMENTS PAGE ================== -->
+<!-- ===================================================== -->
+
+<section id="departments" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>আমাদের বিভাগসমূহ</h2>
+      <p>বিভিন্ন পর্যায়ের শিক্ষার্থীদের জন্য শিক্ষা বিভাগ</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="departments-grid">
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-child"></i></div>
+          <h3>প্রাথমিক শিক্ষা</h3>
+          <p>শিক্ষার্থীদের প্রাথমিক ভিত্তি ও মৌলিক দক্ষতা গড়ে তোলার বিভাগ।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-school"></i></div>
+          <h3>মাধ্যমিক শিক্ষা</h3>
+          <p>মাধ্যমিক পর্যায়ের একাডেমিক জ্ঞান ও দক্ষতা উন্নয়ন।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-book"></i></div>
+          <h3>উচ্চতর শিক্ষা</h3>
+          <p>উচ্চতর শিক্ষা ও ভবিষ্যৎ ক্যারিয়ারের জন্য প্রস্তুতি।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-quran"></i></div>
+          <h3>নাজেরা ও কুরআন</h3>
+          <p>সঠিক উচ্চারণ, তাজবিদ ও নিয়মের মাধ্যমে কুরআন শিক্ষা।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-star-and-crescent"></i></div>
+          <h3>হিফজ বিভাগ</h3>
+          <p>পরিকল্পিত পদ্ধতিতে হিফজুল কুরআন সম্পন্ন করার কার্যক্রম।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-language"></i></div>
+          <h3>আরবি ও ইসলামিক স্টাডিজ</h3>
+          <p>আরবি ভাষা ও ইসলামী জ্ঞান অর্জনের বিশেষায়িত শিক্ষা।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-computer"></i></div>
+          <h3>কম্পিউটার শিক্ষা</h3>
+          <p>ডিজিটাল যুগের প্রয়োজনীয় কম্পিউটার ও প্রযুক্তি দক্ষতা।</p>
+        </div>
+
+        <div class="department-card">
+          <div class="department-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>বিশেষ কোর্স</h3>
+          <p>বিভিন্ন বয়স ও দক্ষতার জন্য বিশেষ প্রশিক্ষণমূলক কোর্স।</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= COURSES PAGE ====================== -->
+<!-- ===================================================== -->
+
+<section id="courses" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>কোর্সসমূহ</h2>
+      <p>আপনার প্রয়োজন অনুযায়ী আমাদের বিভিন্ন শিক্ষা কোর্স</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="courses-grid">
+
+        <div class="course-card">
+          <div class="course-img">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80" alt="">
+          </div>
+          <div class="course-body">
+            <span class="course-tag">একাডেমিক</span>
+            <h3>প্রাথমিক শিক্ষা</h3>
+            <div class="course-duration">
+              <i class="fa-regular fa-clock"></i> ১ বছর
+            </div>
+            <p>প্রাথমিক পর্যায়ের শিক্ষার্থীদের জন্য পূর্ণাঙ্গ শিক্ষা কোর্স।</p>
+            <a href="#" class="btn btn-primary" data-page="admission">ভর্তি আবেদন</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=700&q=80" alt="">
+          </div>
+          <div class="course-body">
+            <span class="course-tag">কুরআন</span>
+            <h3>নাজেরা কুরআন</h3>
+            <div class="course-duration">
+              <i class="fa-regular fa-clock"></i> ৬ মাস
+            </div>
+            <p>সহীহভাবে কুরআন পড়ার জন্য বিশেষ কোর্স।</p>
+            <a href="#" class="btn btn-primary" data-page="admission">ভর্তি আবেদন</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="">
+          </div>
+          <div class="course-body">
+            <span class="course-tag">প্রযুক্তি</span>
+            <h3>কম্পিউটার বেসিক</h3>
+            <div class="course-duration">
+              <i class="fa-regular fa-clock"></i> ৪ মাস
+            </div>
+            <p>কম্পিউটার ও ডিজিটাল প্রযুক্তির মৌলিক জ্ঞান।</p>
+            <a href="#" class="btn btn-primary" data-page="admission">ভর্তি আবেদন</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= TEACHERS PAGE ===================== -->
+<!-- ===================================================== -->
+
+<section id="teachers" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>শিক্ষকবৃন্দ</h2>
+      <p>আমাদের অভিজ্ঞ ও সম্মানিত শিক্ষকমণ্ডলী</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="teachers-grid">
+
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোঃ আব্দুল্লাহ</h3>
+            <div class="position">প্রধান শিক্ষক</div>
+            <p>বাংলা ও সাধারণ শিক্ষা</p>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোছাঃ সুমাইয়া</h3>
+            <div class="position">সহকারী শিক্ষক</div>
+            <p>প্রাথমিক শিক্ষা</p>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোঃ ইমরান হোসাইন</h3>
+            <div class="position">শিক্ষক</div>
+            <p>আরবি ও ইসলামিক স্টাডিজ</p>
+          </div>
+        </div>
+
+        <div class="teacher-card">
+          <div class="teacher-img">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+          </div>
+          <div class="teacher-info">
+            <h3>মোছাঃ নুসরাত</h3>
+            <div class="position">প্রশিক্ষক</div>
+            <p>কম্পিউটার ও প্রযুক্তি</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= NOTICE PAGE ======================= -->
+<!-- ===================================================== -->
+
+<section id="notice" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>নোটিশ বোর্ড</h2>
+      <p>সকল গুরুত্বপূর্ণ নোটিশ ও ঘোষণা</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="notice-list">
+
+        <div class="notice-item">
+          <div class="notice-date">
+            <div>
+              <strong>১৬</strong>
+              <small>আগস্ট</small>
+            </div>
+          </div>
+          <div class="notice-content">
+            <span class="badge">গুরুত্বপূর্ণ</span>
+            <h3>২০২৬ শিক্ষাবর্ষে ভর্তি কার্যক্রম শুরু</h3>
+            <p>নতুন শিক্ষার্থীদের ভর্তি আবেদন এখন গ্রহণ করা হচ্ছে।</p>
+          </div>
+        </div>
+
+        <div class="notice-item">
+          <div class="notice-date">
+            <div>
+              <strong>১২</strong>
+              <small>আগস্ট</small>
+            </div>
+          </div>
+          <div class="notice-content">
+            <h3>অভিভাবক সমাবেশ সংক্রান্ত নোটিশ</h3>
+            <p>সকল অভিভাবককে নির্ধারিত সময়ে উপস্থিত থাকার অনুরোধ করা হচ্ছে।</p>
+          </div>
+        </div>
+
+        <div class="notice-item">
+          <div class="notice-date">
+            <div>
+              <strong>০৮</strong>
+              <small>আগস্ট</small>
+            </div>
+          </div>
+          <div class="notice-content">
+            <h3>মাসিক মূল্যায়ন পরীক্ষার সময়সূচি</h3>
+            <p>আগামী সপ্তাহ থেকে মাসিক মূল্যায়ন পরীক্ষা অনুষ্ঠিত হবে।</p>
+          </div>
+        </div>
+
+        <div class="notice-item">
+          <div class="notice-date">
+            <div>
+              <strong>০২</strong>
+              <small>আগস্ট</small>
+            </div>
+          </div>
+          <div class="notice-content">
+            <h3>নতুন কোর্সে ভর্তি বিজ্ঞপ্তি</h3>
+            <p>কম্পিউটার ও আরবি ভাষা কোর্সে নতুন ব্যাচে ভর্তি চলছে।</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= EVENTS PAGE ======================== -->
+<!-- ===================================================== -->
+
+<section id="events" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>ইভেন্ট</h2>
+      <p>তাকাম একাডেমির সকল অনুষ্ঠান ও কার্যক্রম</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="events-grid">
+
+        <div class="event-card">
+          <div class="event-calendar">
+            <strong>আগস্ট</strong>
+            <span>২৫</span>
+          </div>
+          <h3>বার্ষিক মাহফিল</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সন্ধ্যা ৭টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> একাডেমি মাঠ</span>
+          </div>
+          <p>বার্ষিক ধর্মীয় ও শিক্ষামূলক অনুষ্ঠান।</p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-calendar">
+            <strong>সেপ্টে.</strong>
+            <span>০৫</span>
+          </div>
+          <h3>শিক্ষা সফর</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ৮টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> নির্ধারিত স্থান</span>
+          </div>
+          <p>শিক্ষার্থীদের জন্য শিক্ষা সফর।</p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-calendar">
+            <strong>সেপ্টে.</strong>
+            <span>১২</span>
+          </div>
+          <h3>কুরআন তিলাওয়াত প্রতিযোগিতা</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ৯টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> অডিটোরিয়াম</span>
+          </div>
+          <p>আন্তঃবিভাগীয় কুরআন তিলাওয়াত প্রতিযোগিতা।</p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-calendar">
+            <strong>সেপ্টে.</strong>
+            <span>২০</span>
+          </div>
+          <h3>পুরস্কার বিতরণী</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> বিকেল ৪টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> হলরুম</span>
+          </div>
+          <p>সফল শিক্ষার্থীদের পুরস্কার প্রদান।</p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-calendar">
+            <strong>সেপ্টে.</strong>
+            <span>২৭</span>
+          </div>
+          <h3>অভিভাবক সমাবেশ</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ১০টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> অডিটোরিয়াম</span>
+          </div>
+          <p>অভিভাবকদের সাথে শিক্ষার্থীদের অগ্রগতি নিয়ে আলোচনা।</p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-calendar">
+            <strong>অক্টো.</strong>
+            <span>০৩</span>
+          </div>
+          <h3>শিক্ষা ও প্রযুক্তি সেমিনার</h3>
+          <div class="event-meta">
+            <span><i class="fa-regular fa-clock"></i> সকাল ১১টা</span>
+            <span><i class="fa-solid fa-location-dot"></i> সেমিনার হল</span>
+          </div>
+          <p>আধুনিক শিক্ষায় প্রযুক্তির ভূমিকা নিয়ে সেমিনার।</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= GALLERY PAGE ======================= -->
+<!-- ===================================================== -->
+
+<section id="gallery" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>গ্যালারি</h2>
+      <p>আমাদের শিক্ষা ও কার্যক্রমের কিছু মুহূর্ত</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">সব</button>
+        <button class="filter-btn" data-filter="education">শিক্ষা কার্যক্রম</button>
+        <button class="filter-btn" data-filter="event">অনুষ্ঠান</button>
+        <button class="filter-btn" data-filter="competition">প্রতিযোগিতা</button>
+        <button class="filter-btn" data-filter="campus">ক্যাম্পাস</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-category="education">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="event">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="competition">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="education">
+          <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="event">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="competition">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=700&q=80" alt="">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= RESULTS PAGE ======================= -->
+<!-- ===================================================== -->
+
+<section id="results" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>ফলাফল</h2>
+      <p>Student ID, Roll ও পরীক্ষার মাধ্যমে ফলাফল দেখুন</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="result-search">
+
+        <h3 class="form-title">ফলাফল অনুসন্ধান</h3>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Student ID</label>
+            <input id="studentId" type="text" placeholder="যেমন: TA-2026-001">
+          </div>
+
+          <div class="form-group">
+            <label>Roll Number</label>
+            <input id="rollNumber" type="text" placeholder="রোল নম্বর">
+          </div>
+
+          <div class="form-group full">
+            <label>পরীক্ষা</label>
+            <select id="exam">
+              <option>অর্ধবার্ষিক পরীক্ষা ২০২৬</option>
+              <option>বার্ষিক পরীক্ষা ২০২৬</option>
+              <option>মাসিক মূল্যায়ন</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button class="btn btn-primary" onclick="searchResult()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          ফলাফল দেখুন
+        </button>
+
+      </div>
+
+      <div class="result-box" id="resultBox">
+
+        <div class="result-header">
+          <div>
+            <h3>মোঃ আব্দুর রহমান</h3>
+            <p>শ্রেণি: অষ্টম | রোল: ০১</p>
+          </div>
+
+          <div>
+            <strong>GPA: 5.00</strong>
+            <br>
+            <span>সামগ্রিক ফলাফল: উত্তীর্ণ</span>
+          </div>
+        </div>
+
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>বিষয়</th>
+              <th>পূর্ণমান</th>
+              <th>প্রাপ্ত নম্বর</th>
+              <th>গ্রেড</th>
+              <th>GPA</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>বাংলা</td>
+              <td>১০০</td>
+              <td>৯২</td>
+              <td>A+</td>
+              <td>5.00</td>
+            </tr>
+
+            <tr>
+              <td>ইংরেজি</td>
+              <td>১০০</td>
+              <td>৯০</td>
+              <td>A+</td>
+              <td>5.00</td>
+            </tr>
+
+            <tr>
+              <td>গণিত</td>
+              <td>১০০</td>
+              <td>৯৫</td>
+              <td>A+</td>
+              <td>5.00</td>
+            </tr>
+
+            <tr>
+              <td>বিজ্ঞান</td>
+              <td>১০০</td>
+              <td>৯১</td>
+              <td>A+</td>
+              <td>5.00</td>
+            </tr>
+
+            <tr>
+              <td>ইসলামিক স্টাডিজ</td>
+              <td>১০০</td>
+              <td>৯৪</td>
+              <td>A+</td>
+              <td>5.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= ADMISSION PAGE ==================== -->
+<!-- ===================================================== -->
+
+<section id="admission" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>ভর্তি আবেদন</h2>
+      <p>অনলাইনে ভর্তি আবেদন করুন</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <form class="admission-form" id="admissionForm">
+
+        <h3 class="form-title">শিক্ষার্থী ভর্তি আবেদন ফর্ম</h3>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>শিক্ষার্থীর নাম *</label>
+            <input required type="text" placeholder="পূর্ণ নাম">
+          </div>
+
+          <div class="form-group">
+            <label>পিতার নাম *</label>
+            <input required type="text" placeholder="পিতার পূর্ণ নাম">
+          </div>
+
+          <div class="form-group">
+            <label>মাতার নাম *</label>
+            <input required type="text" placeholder="মাতার পূর্ণ নাম">
+          </div>
+
+          <div class="form-group">
+            <label>জন্মতারিখ *</label>
+            <input required type="date">
+          </div>
+
+          <div class="form-group">
+            <label>লিঙ্গ *</label>
+            <select required>
+              <option value="">নির্বাচন করুন</option>
+              <option>ছেলে</option>
+              <option>মেয়ে</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>মোবাইল নম্বর *</label>
+            <input required type="tel" placeholder="01XXXXXXXXX">
+          </div>
+
+          <div class="form-group full">
+            <label>বর্তমান ঠিকানা *</label>
+            <textarea required placeholder="বর্তমান ঠিকানা লিখুন"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>পূর্ববর্তী প্রতিষ্ঠানের নাম</label>
+            <input type="text" placeholder="প্রতিষ্ঠানের নাম">
+          </div>
+
+          <div class="form-group">
+            <label>কোন বিভাগে ভর্তি হতে চান? *</label>
+            <select required>
+              <option value="">নির্বাচন করুন</option>
+              <option>প্রাথমিক শিক্ষা</option>
+              <option>মাধ্যমিক শিক্ষা</option>
+              <option>নাজেরা/কুরআন</option>
+              <option>হিফজ বিভাগ</option>
+              <option>আরবি ও ইসলামিক স্টাডিজ</option>
+              <option>কম্পিউটার শিক্ষা</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>অভিভাবকের নাম *</label>
+            <input required type="text" placeholder="অভিভাবকের নাম">
+          </div>
+
+          <div class="form-group">
+            <label>অভিভাবকের মোবাইল *</label>
+            <input required type="tel" placeholder="01XXXXXXXXX">
+          </div>
+
+          <div class="form-group full">
+            <label>শিক্ষার্থীর ছবি</label>
+            <input type="file" accept="image/*">
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i>
+          আবেদন জমা দিন
+        </button>
+
+        <div class="success-message" id="admissionSuccess">
+          <strong>✓ আবেদন সফলভাবে গ্রহণ করা হয়েছে!</strong>
+          <br>
+          আপনার আবেদনটি ডেমো হিসেবে গ্রহণ করা হয়েছে। বাস্তব ব্যবহারের জন্য
+          এটি Backend/Database-এর সাথে সংযুক্ত করতে হবে।
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+</section>
+
+<!-- ===================================================== -->
+<!-- ================= CONTACT PAGE ======================= -->
+<!-- ===================================================== -->
+
+<section id="contact" class="page">
+
+  <div class="page-banner">
+    <div class="container">
+      <h2>যোগাযোগ করুন</h2>
+      <p>তাকাম একাডেমির সাথে যোগাযোগ করুন</p>
+    </div>
+  </div>
+
+  <section class="section contact">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+
+        <h3>যোগাযোগের তথ্য</h3>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <strong>ঠিকানা</strong>
+            <span>৯৪, কাজী আলাউদ্দিন রোড, নাজির বাজার, বংশাল, ঢাকা, বাংলাদেশ</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <strong>ফোন</strong>
+            <span>+880 1638-816760</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div>
+            <strong>ইমেইল</strong>
+            <span>info@takamacademy.com</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <strong>অফিস সময়</strong>
+            <span>সকাল ৮টা - বিকেল ৫টা</span>
+          </div>
+        </div>
+
+        <div class="map">
+          <div>
+            <i class="fa-solid fa-map-location-dot"></i>
+            <br>
+            Google Map Placeholder
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-form">
+
+        <h3>আমাদের মেসেজ পাঠান</h3>
+
+        <form id="contactForm">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label>নাম *</label>
+              <input required type="text" placeholder="আপনার নাম">
+            </div>
+
+            <div class="form-group">
+              <label>ফোন নম্বর *</label>
+              <input required type="tel" placeholder="01XXXXXXXXX">
+            </div>
+
+            <div class="form-group">
+              <label>ইমেইল</label>
+              <input type="email" placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+              <label>বিষয় *</label>
+              <input required type="text" placeholder="বিষয়">
+            </div>
+
+            <div class="form-group full">
+              <label>বার্তা *</label>
+              <textarea required placeholder="আপনার বার্তা লিখুন"></textarea>
+            </div>
+
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            মেসেজ পাঠান
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container footer-grid">
+
+    <div>
+      <div class="footer-brand">তাকাম একাডেমি</div>
+
+      <p>
+        জ্ঞান, নৈতিকতা ও আদর।
+        শিক্ষার্
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Abu.twahaa.saiful.Islam.760"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+
+      <ul class="footer-links">
+        <li><a href="#" data-page="home">হোম</a></li>
+        <li><a href="#" data-page="about">আমাদের সম্পর্কে</a></li>
+        <li><a href="#" data-page="courses">কোর্স</a></li>
+        <li><a href="#" data-page="teachers">শিক্ষক</a></li>
+        <li><a href="#" data-page="notice">নোটিশ</a></li>
+        <li><a href="#" data-page="events">ইভেন্ট</a></li>
+        <li><a href="#" data-page="contact">যোগাযোগ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>যোগাযোগ</h3>
+
+      <p>
+        <i class="fa-solid fa-phone"></i>
+        +880 1638-816760
+      </p>
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        info@takamacademy.com
+      </p>
+
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        ঢাকা, বাংলাদেশ
+      </p>
+    </div>
+
+    <div>
+      <h3>Newsletter</h3>
+
+      <p>
+        নতুন নোটিশ ও আপডেট পেতে আমাদের Newsletter-এ সাবস্ক্রাইব করুন।
+      </p>
+
+      <form class="newsletter" onsubmit="subscribeNewsletter(event)">
+        <input type="email" required placeholder="আপনার ইমেইল">
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © ২০২৬ তাকাম একাডেমি। সর্বস্বত্ব সংরক্ষিত।
+  </div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+  <script src="takam-academy.js"></script>
+</body>
+</html>
