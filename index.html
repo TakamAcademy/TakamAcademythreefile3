@@ -17,7 +17,6 @@
 
   <link rel="stylesheet" href="takam-academy.css">
 </head>
-
 <body>
 
 <!-- ================= TOP BAR ================= -->
@@ -73,7 +72,34 @@
     </ul>
   </div>
 </nav>
+<!-- ==============================
+     HEADER MARQUEE ANNOUNCEMENT
+============================== -->
+<div class="top-marquee">
 
+    <!-- ঘোষণা লেবেল -->
+    <div class="announcement-label">
+        📢 ঘোষণা
+    </div>
+
+    <!-- Marquee Area -->
+    <div class="marquee-area">
+        <div class="marquee-track">
+
+            <!-- প্রথম লেখা -->
+            <div class="marquee-text">
+                আগামীকাল সকল ছাত্রের অভিভাবক সভা অনুষ্ঠিত হবে — সবাইকে যথাসময়ে উপস্থিত থাকার জন্য অনুরোধ করা হলো।
+            </div>
+
+            <!-- দ্বিতীয়বার একই লেখা (Seamless Loop এর জন্য) -->
+            <div class="marquee-text">
+                আগামীকাল সকল ছাত্রের অভিভাবক সভা অনুষ্ঠিত হবে — সবাইকে যথাসময়ে উপস্থিত থাকার জন্য অনুরোধ করা হলো।
+            </div>
+
+        </div>
+    </div>
+
+</div>
 <!-- ================= HOME PAGE ================= -->
 <main id="home" class="page active">
 
@@ -87,12 +113,13 @@
           একটি আধুনিক মূল্যবোধভিত্তিক শিক্ষা প্রতিষ্ঠান
         </div>
 
-      <h2>
-        তাকাম একাডেমী
-        <br>
-        <span id="typedText"></span>
-       <span class="typing-cursor"></span>
-      </h2>
+<h2>
+  তাকাম একাডেমী
+  <br>
+  <span class="typing-container">
+    <span id="typedText"></span><span class="typing-cursor"></span>
+  </span>
+</h2>
 
         <p>
           তাকাম একাড
@@ -171,6 +198,76 @@
 
     </div>
   </section>
+
+  <!-- =====================================================
+     MODERN ISLAMIC IMAGE SLIDER
+===================================================== -->
+<section class="hero-slider">
+    <div class="slider-wrapper">
+
+        <!-- SLIDE 1 -->
+        <div class="slide active">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnoaL6pXdwohvFuwbwv79aB5Y2dR_lMKSinqUfPpLtOKei8frIaTmipwHY5YALAF4o9XpAoUMM9FxGCW0vX0Bl222IFXuIZWGN7njljq8yaTs5wf82eecsO4kb8eXgafX1Xks4VJwerEzhkR6qoEnTST2CqqyJ-bbj5JyBNRaYdM_h8YGratDIEuRULa6i/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.37%20PM.jpeg" alt="মাদরাসাতুল হাদীস">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <span class="slide-badge">WELCOME</span>
+                <h1>তাকাম একাডেমি</h1>
+                <p>কুরআন, সুন্নাহ ও ইসলামী শিক্ষার সমন্বিত একটি সুন্দর শিক্ষা পরিবেশ।</p>
+                <a href="#" class="slide-btn">
+                    বিস্তারিত দেখুন <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnoaL6pXdwohvFuwbwv79aB5Y2dR_lMKSinqUfPpLtOKei8frIaTmipwHY5YALAF4o9XpAoUMM9FxGCW0vX0Bl222IFXuIZWGN7njljq8yaTs5wf82eecsO4kb8eXgafX1Xks4VJwerEzhkR6qoEnTST2CqqyJ-bbj5JyBNRaYdM_h8YGratDIEuRULa6i/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.37%20PM.jpeg" alt="ভর্তি কার্যক্রম">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <span class="slide-badge">ADMISSION OPEN</span>
+                <h1>ভর্তি কার্যক্রম চলছে</h1>
+                <p>আপনার সন্তানের সুন্দর ভবিষ্যতের জন্য আজই ভর্তি করুন।</p>
+                <a href="#" class="slide-btn">
+                    ভর্তি তথ্য <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnoaL6pXdwohvFuwbwv79aB5Y2dR_lMKSinqUfPpLtOKei8frIaTmipwHY5YALAF4o9XpAoUMM9FxGCW0vX0Bl222IFXuIZWGN7njljq8yaTs5wf82eecsO4kb8eXgafX1Xks4VJwerEzhkR6qoEnTST2CqqyJ-bbj5JyBNRaYdM_h8YGratDIEuRULa6i/s1070/WhatsApp%20Image%202026-08-17%20at%209.47.37%20PM.jpeg" alt="ইসলামী শিক্ষা">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <span class="slide-badge">ISLAMIC EDUCATION</span>
+                <h1>ইলম ও আমলের সমন্বয়</h1>
+                <p>জ্ঞান, আদব, আখলাক ও আমলের মাধ্যমে আদর্শ প্রজন্ম গড়ে তোলা।</p>
+                <a href="#" class="slide-btn">
+                    আমাদের সম্পর্কে <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- NAVIGATION BUTTONS -->
+        <button class="slider-btn prev" aria-label="Previous Slide">‹</button>
+        <button class="slider-btn next" aria-label="Next Slide">›</button>
+
+        <!-- DOTS -->
+        <div class="slider-dots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- PROGRESS BAR -->
+        <div class="slider-progress">
+            <span></span>
+        </div>
+
+    </div>
+</section>
+<!-- =====================================================
+     MODERN ISLAMIC IMAGE SLIDER closd
+===================================================== -->
 
   <!-- About -->
   <section class="section about">
@@ -1573,6 +1670,69 @@
   </section>
 </section>
 
+
+<!-- BOOK SECTION (4 BOOKS GRID) -->
+<section class="book-grid-container">
+  <div class="section-title">
+    <h2>📚 তাকাম একাডেমি লাইব্রেরি</h2>
+    <p>আপনার পছন্দের বইটি নির্বাচন করে সরাসরি পড়ুন</p>
+  </div>
+
+  <div class="books-grid">
+    
+<!-- কার্ড ১ -->
+<div class="book-card-item">
+  <div class="book-cover-wrap">
+    <!-- 👈 এখানে আপনার বইয়ের কভার ছবির URL বসাবেন -->
+    <img src="https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/Fainal-%20font%20side.jpg" alt="আমার বই" class="book-cover-img">
+  </div>
+  <div class="book-details">
+    <h4>প্রশ্নোত্তোরে এসো সহজ পদ্ধতিতে তাজবীদ ও সিফাত শিখি</h4>
+    <p class="author">প্রকাশনা: তাকাম একাডেমি</p>
+    <button type="button" onclick="openPdfModal('https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/A5%20size.pdf#toolbar=0&navpanes=0')" class="read-btn">📖 বইটি পড়ুন</button>
+  </div>
+</div>
+
+    <!-- কার্ড ২ -->
+<div class="book-card-item">
+  <div class="book-cover-wrap">
+    <!-- 👈 এখানে আপনার বইয়ের কভার ছবির URL বসাবেন -->
+    <img src="https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/KAYDA%20NEW%20COVER%20PAGE.jpg" alt="আমার বই" class="book-cover-img">
+  </div>
+  <div class="book-details">
+    <h4>শিশুদের সহজ নূরাণী কায়দা</h4>
+    <p class="author">প্রকাশনা: তাকাম একাডেমি</p>
+    <button type="button" onclick="openPdfModal('https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/Kayda%20.pdf')" class="read-btn">📖 বইটি পড়ুন</button>
+  </div>
+</div>
+
+<!-- কার্ড ৩ -->
+<div class="book-card-item">
+  <div class="book-cover-wrap">
+    <!-- 👈 এখানে আপনার বইয়ের কভার ছবির URL বসাবেন -->
+    <img src="https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/Fainal-%20font%20side.jpg" alt="আমার বই" class="book-cover-img">
+  </div>
+  <div class="book-details">
+    <h4>প্রশ্নোত্তোরে এসো সহজ পদ্ধতিতে তাজবীদ ও সিফাত শিখি</h4>
+    <p class="author">প্রকাশনা: তাকাম একাডেমি</p>
+    <button type="button" onclick="openPdfModal('https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/A5%20size.pdf#toolbar=0&navpanes=0')" class="read-btn">📖 বইটি পড়ুন</button>
+  </div>
+</div>
+
+<!-- কার্ড ৪ -->
+<div class="book-card-item">
+  <div class="book-cover-wrap">
+    <!-- 👈 এখানে আপনার বইয়ের কভার ছবির URL বসাবেন -->
+    <img src="https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/Fainal-%20font%20side.jpg" alt="আমার বই" class="book-cover-img">
+  </div>
+  <div class="book-details">
+    <h4>প্রশ্নোত্তোরে এসো সহজ পদ্ধতিতে তাজবীদ ও সিফাত শিখি</h4>
+    <p class="author">প্রকাশনা: তাকাম একাডেমি</p>
+    <button type="button" onclick="openPdfModal('https://ishbkgxmkywxmesxeqfk.supabase.co/storage/v1/object/public/Amar-boi.pdf/A5%20size.pdf#toolbar=0&navpanes=0')" class="read-btn">📖 বইটি পড়ুন</button>
+  </div>
+</div>
+</section>
+
 <!-- ===================================================== -->
 <!-- ================= ADMISSION PAGE ==================== -->
 <!-- ===================================================== -->
@@ -1892,5 +2052,51 @@
 <!-- ================= JAVASCRIPT ================= -->
 
   <script src="takam-academy.js"></script>
+  <!-- PDF Popup Modal -->
+<div id="pdfModal" class="pdf-modal">
+  <div class="pdf-modal-content">
+    <div class="pdf-header">
+      <span>📖 তাকাম একাডেমি</span>
+      <button type="button" onclick="closePdfModal()" class="close-btn">✕</button>
+    </div>
+    <iframe id="pdfFrame" src="" width="100%" height="100%" style="border:none;"></iframe>
+  </div>
+</div>
+
+
+
+<!-- WHATSAPP FLOATING BUTTON & POPUP -->
+<div class="wa-widget">
+  <!-- WhatsApp Chat Box Popup -->
+  <div class="wa-popup" id="waPopup">
+    <div class="wa-popup-header">
+      <div class="wa-avatar">💬</div>
+      <div class="wa-user-info">
+        <h4>তাকাম একাডেমি সাপোর্ট</h4>
+        <p>সাধারণত কয়েক মিনিটে উত্তর দেওয়া হয়</p>
+      </div>
+      <button class="wa-close-btn" onclick="toggleWhatsApp()">✕</button>
+    </div>
+    <div class="wa-popup-body">
+      <div class="wa-message">
+        আসসালামু আলাইকুম! 👋<br>
+        আপনাকে কীভাবে সাহায্য করতে পারি?
+      </div>
+    </div>
+    <div class="wa-popup-footer">
+      <!-- 👈 আপনার হোয়াটসঅ্যাপ নম্বরটি এখানে দিন (Country code সহ, যেমন: +8801638816760) -->
+      <a href="https://wa.me/+8801638816760?text=আসসালামু%20আলাইকুম,%20আমি%20সহায়তা%20চাই।" target="_blank" class="wa-start-chat-btn">
+        চ্যাট শুরু করুন 🚀
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating Green Button -->
+  <button class="wa-float-btn" onclick="toggleWhatsApp()" title="WhatsApp support">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+    </svg>
+  </button>
+</div>
 </body>
 </html>
